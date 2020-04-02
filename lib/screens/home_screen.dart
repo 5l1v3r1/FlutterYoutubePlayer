@@ -21,7 +21,7 @@ class _HomeScreenState extends State<HomeScreen> {
 
   _initChannel() async {
     Channel channel = await APIService.instance
-        .fetchChannel(channelId: 'UC6Dy0rQ6zDnQuHQ1EeErGUA');
+        .fetchChannel(channelId: 'UC16niRr50-MSBwiO3YDb3RA');
     setState(() {
       _channel = channel;
     });
@@ -131,7 +131,7 @@ class _HomeScreenState extends State<HomeScreen> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text('Cyberstark Co.'),
+        title: Text('BBC News'),
       ),
       body: _channel != null
           ? NotificationListener<ScrollNotification>(
